@@ -1,0 +1,198 @@
+.primary_button{
+    background-color: transparent;
+    border-radius: $space_m_24;
+    padding: $space_s_16 $space_l_32;
+    border-color: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $primary_colour;
+        height: 180%;
+        width: 100%;
+        z-index: -10;
+        transition: all ease-in-out .5s;
+        
+        // transform: translateY(-100%)
+    }
+    a{
+        @include button_text($alt_font);
+        color: $white_colour;
+        transition: all ease-in-out .5s;
+    }
+    &:hover{
+        border: 1px solid $primary_colour;
+        a{
+            color: $primary_colour;
+        }
+        &:after{
+            height: 0;
+            border-radius: 0 0 50% 50%;
+        }
+        
+    }
+}
+
+
+.secondary_button{
+    background-color: transparent;
+    border-radius: $space_m_24;
+    padding: $space_s_16 $space_l_32;
+    border-color: transparent;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $secondary_colour;
+        height: 180%;
+        width: 100%;
+        z-index: -10;
+        transition: all ease-in-out .5s;
+        margin: 0;
+        padding: 0;
+        
+        // transform: translateY(-100%)
+    }
+    a{
+        @include button_text($alt_font);
+        color: $white_colour;
+        transition: all ease-in-out .5s;
+    }
+    &:hover{
+        border: 1px solid $secondary_colour;
+        a{
+            color: $secondary_colour;
+        }
+        &:after{
+            height: 0;
+            border-radius: 0 0 50% 50%;
+        }
+        
+    }
+}
+
+.primary_button_outline{
+    background-color: transparent;
+    border-radius: $space_m_24;
+    padding: $space_s_16 $space_l_32;
+    border: solid 1px $primary_colour;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $primary_colour;
+        height: 0;
+        width: 100%;
+        z-index: -10;
+        transition: all ease-in-out .5s;
+        margin: 0;
+        padding: 0;
+        
+        // transform: translateY(-100%)
+    }
+    a{
+        @include button_text($alt_font);
+        color: $primary_colour;
+        transition: all ease-in-out .5s;
+    }
+    &:hover{
+        border: 1px solid $primary_colour;
+        a{
+            color: $white_colour;
+        }
+        &:after{
+            height: 180%;
+            border-radius: 0 0 50% 50%;
+        }
+        
+    }
+}
+
+
+.secondary_button_outline{
+    background-color: transparent;
+    border-radius: $space_m_24;
+    padding: $space_s_16 $space_l_32;
+    border: solid 1px $secondary_colour;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $secondary_colour;
+        height: 0;
+        width: 100%;
+        z-index: -10;
+        transition: all ease-in-out .5s;
+        margin: 0;
+        padding: 0;
+        
+        // transform: translateY(-100%)
+    }
+    a{
+        @include button_text($alt_font);
+        color: $secondary_colour;
+        transition: all ease-in-out .5s;
+    }
+    &:hover{
+        border: 1px solid $secondary_colour;
+        a{
+            color: $white_colour;
+        }
+        &:after{
+            height: 180%;
+            border-radius: 0 0 50% 50%;
+        }
+        
+    }
+}
+
+
+
+
+
+//Media Queries 
+
+@media screen and (max-width: 400px){
+   
+    .primary_button, .secondary_button, .primary_button_outline, .secondary_button_outline{
+        border-radius: $space_m_24;
+        padding: $space_xs_12 $space_m_24;
+        a{
+          @include small_text($alt_font);
+          font-weight: 500;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

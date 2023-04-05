@@ -1,0 +1,23 @@
+
+
+//Colours
+$primary_colour : #BB0722;
+$secondary_colour :#130C0C;
+$dark_colour :#282828;
+$light_colour :#DDD9D9; 
+$white_colour :#FFFFFF; 
+
+
+//fonts
+$main_font:'Montserrat', sans-serif; 
+$alt_font: 'Poppins', sans-serif;
+
+
+//Spacing
+
+$space_xs_12:clamp(0.69rem, calc(0.67rem + 0.09vw), 0.75rem);
+$space_s_16:clamp(0.88rem, calc(0.83rem + 0.19vw), 1.00rem);
+$space_m_24:clamp(0.88rem, calc(0.83rem + 0.19vw), 1.00rem);
+$space_l_32:clamp(1.75rem, calc(1.67rem + 0.37vw), 2.00rem);
+$space_xl_48:clamp(2.63rem, calc(2.50rem + 0.56vw), 3.00rem);
+$space_xxl_64:clamp(3.50rem, calc(3.33rem + 0.74vw), 4.00rem);

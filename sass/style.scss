@@ -1,0 +1,32 @@
+//Page Resets
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   *ul{
+    list-style: none;
+   }
+   *a{
+    text-decoration: none;
+   }
+
+
+//Imporing Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+//Importing Variables and resets
+@import './Variables/variables';
+@import './Variables/typography';
+//Importing Components
+@import './components/buttons';
+@import './components/header';
+@import './components/footer';
+//Importing Page Styles
+@import './page_styles/home';
+@import './page_styles/about';
+@import './page_styles/blog';
+@import './page_styles/services';
+@import './page_styles/contact';
+
+
+
